@@ -1,0 +1,16 @@
+---
+const { title, category } = Astro.props
+---
+
+<article class='grid grid-cols-2 gap-2'>
+  <div>Image</div>
+  <div class='flex flex-col text-gray-500 gap-2'>
+    <h4 class='text-sm font-mono font-normal text-teal-500'>
+      {category}
+    </h4>
+    <h1 class='text-2xl text-white pb-4'>{title}</h1>
+    <p>Description</p>
+    <div>Tecnologies</div>
+    <div>Icons</div>
+  </div>
+</article>

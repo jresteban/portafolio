@@ -1,0 +1,17 @@
+---
+const { name } = Astro.props
+---
+
+<h6
+  class='flex text-gray-400 items-center mt-2 mb-10 w-full text-3xl
+whitespace-nowrap font-semibold'
+>
+  <span class='number text-teal-500 mr-4'></span>
+  {name}
+</h6>
+<style>
+  .number::before {
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero) '.';
+  }
+</style>
